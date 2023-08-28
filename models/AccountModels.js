@@ -21,6 +21,7 @@ let AccountSchema = new mongoose.Schema({
     remarks:{
         type:String
     },
+    //将账单与用户关联
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'users',
